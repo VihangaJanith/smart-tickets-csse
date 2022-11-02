@@ -52,7 +52,7 @@ function Navbar() {
           alt=""
           loading="lazy"
         />
-        <a class="m-2 navbar-brand" href="/dashboard">
+        <a class="m-2 navbar-brand" href="/">
           Smart Tickets
         </a>
         <button
@@ -70,15 +70,11 @@ function Navbar() {
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="/dashboard">
+              <a class="nav-link" href="/">
                 Home
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Features
-              </a>
-            </li>
+           
 
             {localStorage.getItem("token") == null ? (
               <li class="nav-item">
@@ -89,7 +85,7 @@ function Navbar() {
             ) : (
               <ul class="navbar-nav">
                 <li class="nav-item ">
-                  <a class="nav-link" href="/dashboard">
+                  <a class="nav-link" href="/">
                     {name}{" "}
                   </a>
                 </li>

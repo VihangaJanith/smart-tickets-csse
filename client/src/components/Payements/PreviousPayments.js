@@ -67,22 +67,7 @@ function PreviousPayments() {
     
 
 
-    const deleteBookings = (e) =>{
-
-        const ID = e.target.id;
-
-        axios.delete(`http://localhost:5000/payment/${ID}`).then((res) => {
-            console.log(res.data)
-            alert('Booking Deleted')
-            window.location.reload();
-
-            
-
-
-
-        })
-
-    }
+    
 
 
 
@@ -114,9 +99,7 @@ function PreviousPayments() {
             Payed Date : {booking.createdAt.substring(0,10)} , {booking.createdAt.substring(11,16)} 
             <div className="row mt-2">
             
-                <div className="col-6 md-4">
-                    <button className="btn btn-danger" id={booking._id} onClick={(e)=> deleteBookings(e)}>Cancel Reservation</button>
-                    </div>
+               
 
 
             </div>

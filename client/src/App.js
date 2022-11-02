@@ -15,16 +15,18 @@ import AllJourneys from "./components/Admin/AllJourneys";
 import AllCardRequests from "./components/Admin/AllCardRequests";
 import AllUsers from "./components/Admin/AllUsers";
 import AdminLogin from "./components/Admin/AdminLogin";
+import Qrscan from "./components/TemporyCard/Qrscan";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="">
       <Navbar />
       <Router>
-        <Routes>
+        <Routes>  
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/tempory" element={<Tempory />} />
           <Route path="/addjourney" element={<AddJourney />} />
           <Route path="/viewjourney" element={<ViewJourney />} />
@@ -37,8 +39,10 @@ function App() {
           <Route path="/allcardrequests" element={<AllCardRequests />} />
           <Route path="/allusers" element={<AllUsers />} />
           <Route path="/adminlogin" element={<AdminLogin />} />
+          <Route path="/qr" element={<Qrscan />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }

@@ -45,6 +45,11 @@ function Dashboard() {
 
 
   </a> 
+  <a href="/qr">
+        <button style={{width:"600px"}} class=" btn btn-danger btn-lg btn-block mb-3"> Scan User QR</button>
+
+
+  </a> 
 
     <a >
   

@@ -32,7 +32,7 @@ function PayforCard() {
             Swal.fire({
               title: '<strong "> You have already Payed for the card </strong>',
               size: "lg",
-                html: `<h3>Your Smart Card will be delivered within a few days... </h3>`,
+              html: `<h3>Your Smart Card will be delivered within a few days... </h3>`,
 
               icon: "warning",
 
@@ -182,7 +182,7 @@ function PayforCard() {
                 class=" btn btn-danger btn-lg btn-block"
               >
                 {" "}
-                Add Journey
+               Pay Now
               </button>
             </Form>
           </div>
